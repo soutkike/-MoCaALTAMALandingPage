@@ -8,6 +8,7 @@
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
@@ -16,7 +17,7 @@
   </head>
   <body>
     <nav class="bg-white shadow-lg">
-      <div class="max-w-6xl mx-auto">
+      <div class="max-w-7xl mx-auto">
         <div class="flex justify-between">
           <div class="flex space-x-7">
             <div>
@@ -39,7 +40,33 @@
                   border-b-4 border-green-500
                   font-semibold
                 "
+                >Inicio</a
+              >
+              <a
+                href="#antec"
+                class="
+                  py-4
+                  px-2
+                  text-gray-500
+                  font-semibold
+                  hover:text-green-500
+                  transition
+                  duration-300
+                "
                 >Antecedentes</a
+              >
+              <a
+                href="#equipo"
+                class="
+                  py-4
+                  px-2
+                  text-gray-500
+                  font-semibold
+                  hover:text-green-500
+                  transition
+                  duration-300
+                "
+                >Equipo</a
               >
               <a
                 href=""
@@ -52,7 +79,7 @@
                   transition
                   duration-300
                 "
-                >Equipo</a
+                >Ciudadanos</a
               >
               <a
                 href=""
@@ -80,6 +107,19 @@
                 "
                 >Documentacion</a
               >
+              <a
+                href=""
+                class="
+                  py-4
+                  px-2
+                  text-gray-500
+                  font-semibold
+                  hover:text-green-500
+                  transition
+                  duration-300
+                "
+                >Encuestas</a
+              >
             </div>
           </div>
           <!-- Secondary Navbar items -->
@@ -97,7 +137,7 @@
                 transition
                 duration-300
               "
-              >Encuesta</a
+              >Contacto</a
             >
           </div>
           <!-- Mobile menu button -->
@@ -193,21 +233,249 @@
         });
       </script>
     </nav>
-    <section class="h-screen">
+
+    <section class="hero w-full">
       <div
-        class="flex h-full justify-between items-center pb-12 max-w-7xl mx-auto"
+        class="
+          flex flex-col
+          h-full
+          justify-center
+          md:flex-row md:justify-between
+          max-w-7xl
+          mx-auto
+        "
       >
-        <div>
-          <h1 class="text-5xl text-gray-900 text-center py-4">
-            Red Ciudadana de Monitoreo <br />
-            de la Calidad del Aire
+        <div class="flex flex-col justify-center">
+          <h1
+            class="
+              text-2xl
+              md:text-5xl
+              text-gray-900 text-center
+              tracking-wide
+              font-semibold
+            "
+          >
+            Red Ciudadana de Monitoreo <br />de la Calidad del Aire
           </h1>
-          <p class="text-lg text-center text-gray-400 font-semibold">
+          <p
+            class="
+              text-center
+              py-4
+              lg:text-lg
+              text-gray-400
+              font-semibold
+              tracking-wide
+            "
+          >
             Zona Metropolitana de Tampico, Ciudad Madero y Altamira
           </p>
         </div>
-        <div>
-          <img src="./assets/mainPic.svg" alt="air icon " width="450px" />
+        <div class="flex justify-center items-center max-w-xl">
+          <div class="md:w-full">
+            <img
+              class="max-w-xs md:max-w-md lg:max-w-lg"
+              src="./assets/mainPic.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex-col w-full bg-gray-100 px-4" id="equipo">
+      <div class="py-10">
+        <div class="max-w-6xl mx-auto py-5">
+          <h2
+            class="
+              text-2xl
+              md:text-3xl
+              lg:text-4xl
+              font-semibold
+              text-center
+              pb-2
+              tracking-wide
+            "
+          >
+            Equipo de Trabajo
+          </h2>
+          <p class="text-justify lg:text-lg my-4">
+            Derivado del interés en conocer y contribuir a la solución de los
+            problemas regionales y nacionales, un grupo de investigadores del
+            Centro de Investigación en Ciencia Aplicada y Tecnología Avanzada
+            Unidad Altamira (CICATA Altamira) del Instituto Politécnico
+            Nacional, el Instituto Tecnológico de Ciudad Madero, el Centro de
+            Investigación en Mcicro y Nanotecnología (MICRONA) de la Universidad
+            Veracruzana y el Centro de Investigación Científica y de Educación
+            Superior de Ensenada (CICESE), estamos colaborando en un Proyecto de
+            Ciencia Ciudadana para conocer la calidad del aire exterior e
+            interior en la Zona Metropolitana de Tampico-Madero-Altamira, en el
+            sur del Estado de Tamaulipas.
+          </p>
+          <div class="flex flex-col md:flex-row justify-between py-10">
+            <div class="flex justify-center py-5">
+              <img src="/assets/logos/cicese.png" alt="" />
+            </div>
+            <div class="flex justify-center py-5">
+              <img src="/assets/logos/ipn.png" alt="" />
+            </div>
+            <div class="flex justify-center py-5">
+              <img src="/assets/logos/itcm.png" alt="" />
+            </div>
+            <div class="flex justify-center py-5">
+              <img src="/assets/logos/uv.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-4" id="antec">
+      <article class="my-10">
+        <div class="max-w-6xl mx-auto py-2 px-5">
+          <h3 class="text-3xl font-bold py-2 text-center tracking-wide">
+            Antecedentes
+          </h3>
+          <p class="text-justify py-3 lg:text-lg">
+            La contaminación atmosférica es un grave problema provocado por la
+            emisión de determinadas sustancias que provocan efectos
+            perjudiciales para el medio ambiente y la salud. Mediante el
+            monitoreo, caracterización y posterior disminución de los niveles de
+            contaminación del aire los países pueden reducir la carga de
+            morbilidad derivada de accidentes cerebrovasculares, cánceres de
+            pulmón y neumopatías crónicas y agudas, entre ellas el asma [1]. En
+            la zona sur de Tamaulipas las enfermedades pulmonares obstructivas
+            crónicas están entre las 10 principales causas de padecimientos de
+            muerte [2].
+          </p>
+          <p class="text-justify py-3 lg:text-lg">
+            Las fuentes de emisión engloban a todas aquellas acciones,
+            actividades, procesos u operaciones capaces de producir
+            contaminantes del aire. Los contaminantes criterio (ozono O3,
+            dióxido de azufre SO2, monóxido de carbono CO, dióxido de nitrógeno
+            NO2, las partículas en suspensión PM10, PM2.5 y el plomo Pb) son
+            aquellos contaminantes normados a los que se les han establecido un
+            límite máximo permisible de concentración en el aire ambiente, con
+            la finalidad de proteger la salud humana y asegurar el bienestar de
+            la población. La dispersión de los contaminantes en las zonas
+            urbanas es un tema de suma importancia, ya que la medición puntual
+            de los contaminantes típicos es influida por los factores
+            meteorológicos como la velocidad y dirección del viento, la humedad
+            relativa, la temperatura ambiente y la presión atmosférica. Para
+            medir y evaluar el impacto de la contaminación del aire en la
+            población y los recursos naturales, es indispensable contar con
+            sistemas, redes y programas adecuados de medición de la calidad del
+            aire.
+          </p>
+        </div>
+      </article>
+      <article class="px-3">
+        <div class="max-w-6xl mx-auto">
+          <h3 class="text-3xl font-bold text-center tracking-wide">
+            Justificación
+          </h3>
+          <p class="text-justify py-3 lg:text-lg">
+            El derecho a un medio ambiente sano [9], por lo tanto, es un derecho
+            expresamente reconocido en el acervo normativo nacional y regional.
+            Es fundamental respetarlo y garantizarlo y su alcance se debe medir
+            en relación con los demás derechos humanos como lo es el derecho a
+            la protección de la salud. La información es la principal
+            herramienta para impulsar la participación ciudadana en la
+            protección ambiental [10], por lo que es importante ponerla al
+            alcance de todos, de tal manera que la información ambiental
+            contribuya a propiciar la acción convergente de los diferentes
+            actores a favor de una mejor calidad del aire.
+          </p>
+          <p class="text-justify py-3 lg:text-lg">
+            La propuesta innovadora de este proyecto considera no solo la
+            incorporación de equipo de monitoreo de calidad de aire en la zona
+            metropolitana de los municipios de Tampico, Cd. Madero y Altamira,
+            sino que considera a la ciudadanía como parte esencial de una red de
+            conocimiento que permita monitorear la calidad del aire. Dentro de
+            cada ciudad existe una gran cantidad de información que, aunque está
+            al alcance de todos, resulta difícil de cuantificar y transmitir de
+            un modo fiable. Esa información es la que pueden transmitir los
+            propios ciudadanos con sensores repartidos por todo el territorio,
+            que se convierten en lo que se conoce como Smart Citizens o
+            ciudadanos inteligentes.
+          </p>
+          <p class="text-justify py-3 lg:text-lg">
+            El proyecto propuesto no busca sólo informar a la población sobre el
+            estado de la calidad del aire (buena, aceptable, mala, muy mala y
+            extremadamente mala), sino también sobre el nivel de riesgo asociado
+            (probables daños a la salud, dependiendo si el riesgo es bajo,
+            moderado, alto, muy alto o extremadamente alto) y las
+            recomendaciones de las acciones a adoptar particularmente a grupos
+            sensibles (medidas para reducir la exposición) por lo que considera
+            los Lineamientos para la obtención y comunicación del Índice de
+            Calidad del Aire y Riesgos a la Salud de la Norma Oficial Mexicana
+            NOM-172-SEMARNAT-2019 donde refiere que el monitoreo de la calidad
+            del aire toma una importancia fundamental para proveer la
+            información necesaria a fin de evaluar la calidad del aire de cada
+            región y sus tendencias, así como para desarrollar estrategias de
+            prevención y control, y políticas ambientales integrales, entre
+            otras aplicaciones.
+          </p>
+        </div>
+      </article>
+      <article class="my-10 px-5">
+        <div class="max-w-6xl mx-auto">
+          <h3 class="text-3xl font-bold py-2 text-center tracking-wide">
+            Objetivo
+          </h3>
+          <p class="text-justify lg:text-lg">
+            Construir una red de monitoreo ciudadana de acceso libre para poner
+            al alcance de la población y de los gobiernos municipales una
+            herramienta complementaria a las estaciones oficiales, para informar
+            y fomentar el interés en la mejora de la calidad del aire de la Zona
+            Metropolitana Tampico, Cd. Madero y Altamira.
+          </p>
+        </div>
+      </article>
+    </section>
+    <section id="ciudadanos" class="section-ciudadanos">
+      <div
+        class="
+          flex flex-col
+          lg:flex-row
+          justify-between
+          items-center
+          max-w-6xl
+          mx-auto
+          py-10
+        "
+      >
+        <div class="p-4 max-w-lg">
+          <h1
+            class="
+              text-center text-2xl
+              font-semibold
+              tracking-wide
+              md:text-2xl
+              lg:text-4xl
+            "
+          >
+            Ciudadanos
+          </h1>
+          <p class="text-center text-gray-500 py-2 md:text-lg">
+            Con tu ayuda seguimos construyendo una cultura del cuidado del aire
+            en la zona conurbada.
+          </p>
+          <div class="flex justify-center py-3">
+            <a
+              href=""
+              class="
+                bg-green-400
+                px-8
+                py-2
+                text-white
+                font-semibold
+                tracking-wide
+                rounded-lg
+                hover:bg-green-300
+              "
+              >Unirse</a
+            >
+          </div>
+        </div>
+        <div class="max-w-lg">
+          <img src="./assets/comunidad.svg" alt="" />
         </div>
       </div>
     </section>
