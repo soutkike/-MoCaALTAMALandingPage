@@ -27,7 +27,7 @@ html {
 }
 
 .section-ciudadanos {
-  height: 500px;
+  height: 700px;
 }
 
 .section-docs {
@@ -50,10 +50,10 @@ html {
 }
 
 .map {
-  height: 900px;
+  height: 90vh;
 }
 
 .EmbedMap {
-  height: 90%;
+  height: 80%;
   width: 95%;
 }
