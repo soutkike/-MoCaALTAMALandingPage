@@ -48,3 +48,12 @@ html {
   text-align: center;
   vertical-align: center;
 }
+
+.map {
+  height: 900px;
+}
+
+.EmbedMap {
+  height: 90%;
+  width: 95%;
+}
