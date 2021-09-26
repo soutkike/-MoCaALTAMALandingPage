@@ -13,6 +13,7 @@
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js" defer></script>
     <title>MOCAALTAMA</title>
   </head>
   <body>
@@ -39,6 +40,7 @@
                   text-green-500
                   border-b-4 border-green-500
                   font-semibold
+                  navitem
                 "
                 >Inicio</a
               >
@@ -52,6 +54,7 @@
                   hover:text-green-500
                   transition
                   duration-300
+                  navitem
                 "
                 >Antecedentes</a
               >
@@ -65,6 +68,7 @@
                   hover:text-green-500
                   transition
                   duration-300
+                  navitem
                 "
                 >Equipo</a
               >
@@ -78,6 +82,7 @@
                   hover:text-green-500
                   transition
                   duration-300
+                  navitem
                 "
                 >Ciudadanos</a
               >
@@ -91,6 +96,7 @@
                   hover:text-green-500
                   transition
                   duration-300
+                  navitem
                 "
                 >Recursos</a
               >
@@ -104,6 +110,7 @@
                   hover:text-green-500
                   transition
                   duration-300
+                  navitem
                 "
                 >Documentacion</a
               >
@@ -117,6 +124,7 @@
                   hover:text-green-500
                   transition
                   duration-300
+                  navitem
                 "
                 >Encuestas</a
               >
@@ -136,8 +144,9 @@
                 hover:bg-green-400
                 transition
                 duration-300
+                navitem
               "
-              >Contacto</a
+              >Mapa</a
             >
           </div>
           <!-- Mobile menu button -->
@@ -280,7 +289,7 @@
         </div>
       </div>
     </section>
-    <section class="py-4 bg-gray-100" id="antec">
+    <section class="py-4 bg-gray-100 px-2" id="antec">
       <article class="my-10">
         <div class="max-w-6xl mx-auto py-2 px-5">
           <h3 class="text-3xl font-bold py-2 text-center tracking-wide">
@@ -295,18 +304,18 @@
             Altamira, Tampico y Cd. Madero en el sur de Tamaulipas.
           </p>
         </div>
-        <div class="max-w-6xl mx-auto py-2 px-5">
+        <div class="max-w-6xl mx-auto py-2">
           <h3 class="text-3xl font-bold py-2 text-center tracking-wide">
             Antecedentes
           </h3>
-          <p class="text-justify py-3 lg:text-lg">
+          <p class="text-justify py-1 lg:text-lg">
             La contaminación atmosférica es un grave problema provocado por la
             emisión de determinadas sustancias que provocan efectos
             perjudiciales para el medio ambiente y la salud. En la zona sur de
             Tamaulipas las enfermedades pulmonares obstructivas crónicas están
             entre las 10 principales causas de padecimientos de muerte.
           </p>
-          <p class="text-justify py-3 lg:text-lg">
+          <p class="text-justify py-1 lg:text-lg">
             Las fuentes de emisión engloban a todas aquellas acciones,
             actividades, procesos u operaciones capaces de producir
             contaminantes del aire. La dispersión de los contaminantes en las
@@ -314,7 +323,7 @@
             puntual de los contaminantes típicos es influida por los factores
             meteorológicos.
           </p>
-          <p class="text-justify py-3 lg:text-lg">
+          <p class="text-justify py-1 lg:text-lg">
             Para medir y evaluar el impacto de la contaminación del aire en la
             población y los recursos naturales, es indispensable contar con
             sistemas, redes y programas adecuados de medición de la calidad del
@@ -327,7 +336,7 @@
           <h3 class="text-3xl font-bold text-center tracking-wide">
             Justificación
           </h3>
-          <p class="text-justify py-3 lg:text-lg">
+          <p class="text-justify py-1 lg:text-lg">
             El derecho a un medio ambiente sano, por lo tanto, es un derecho
             expresamente reconocido en el acervo normativo nacional y regional.
             La información es la principal herramienta para impulsar la
@@ -336,7 +345,7 @@
             información ambiental contribuya a propiciar la acción convergente
             de los diferentes actores a favor de una mejor calidad del aire.
           </p>
-          <p class="text-justify py-3 lg:text-lg">
+          <p class="text-justify py-1 lg:text-lg">
             Este proyecto considera no solo el monitoreo de calidad de aire en
             la zona metropolitana de los municipios de Tampico, Cd. Madero y
             Altamira, sino que incorpora a la ciudadanía como parte esencial de
@@ -750,7 +759,9 @@
     </section>
 
     <section class="map pt-4 pb-8 bg-gray-100">
-      <h3 class="text-4xl p-2 text-center tracking-wide">Zona de Estudio</h3>
+      <h3 class="text-4xl p-2 text-center tracking-wide font-medium">
+        Zona Metropolitana del Sur de Tamaulipas: Altamira, Tampico y Cd. Madero
+      </h3>
       <div class="flex flex-wrapper justify-center items-center h-full">
         <iframe
           class="EmbedMap rounded-lg"
