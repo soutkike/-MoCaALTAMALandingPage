@@ -1,5 +1,11 @@
 .hero {
-  height: 90vh;
+  height: 92vh;
+  background: url("/assets/tinified/tampico1.png");
+  background-size: cover;
+}
+
+.hero-container {
+  backdrop-filter: brightness(40%);
 }
 
 html {
@@ -40,11 +46,11 @@ html {
 
 .icon {
   display: inline-block;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 32px;
+
   color: white;
-  width: 45px;
-  height: 45px;
+  width: 32px;
+  height: 32px;
   text-align: center;
   vertical-align: center;
 }
@@ -56,4 +62,8 @@ html {
 .EmbedMap {
   height: 80%;
   width: 95%;
+}
+
+.map-container {
+  height: 85%;
 }
